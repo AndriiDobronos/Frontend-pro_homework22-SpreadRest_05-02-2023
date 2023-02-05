@@ -5,7 +5,6 @@
 class Article {
 //    constructor(id, name, color, description, maxAmount) { // 1
    constructor({id, name, color, description, maxAmount}) {
-//       constructor(...arguments) {
         this.id = id
         this.name = name
         this.color = color
