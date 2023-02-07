@@ -36,13 +36,9 @@ const allArticles = [...oldArticles,...newArticles]
 
 let allArticlesMessage = `There are articles currently available:\n`
 
-function list(article) {
-    const name = article.name
-    const color = article.color
-    const maxAmount = article.maxAmount
-    allArticlesMessage += `${name} (${color}) - ${maxAmount}pc\n`
-}
-[...allArticles].forEach(list)
+allArticles.forEach(function({name,color,maxAmount}) {
+   allArticlesMessage += `${name} (${color}) - ${maxAmount}pc\n` // 10
+})
 
 //allArticles.forEach(function(article) { // 9
 //    allArticlesMessage += `${article.name} (${article.color}) - ${article.maxAmount}pc\n` // 10
